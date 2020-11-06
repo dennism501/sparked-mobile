@@ -67,5 +67,48 @@ export default StyleSheet.create({
     textTransform: 'capitalize',
     fontSize: 18,
     fontWeight: '700',
-  }
+  },
+  IllustrationContainer: {
+    height: '80%',
+    width: '100%',
+  },
+  textDescription: {
+    fontSize: 20,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: 'white',
+    marginTop: 5,
+  },
+  textDescriptionContainer: {
+    height: '55%',
+    display: 'flex',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
+  },
+  logoText: {
+    fontSize: 35,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginLeft: '3%',
+  },
+  inlineLogo: {
+    height: 120,
+    width: 120,
+  },
+  inlineLogoContainer: {
+    height: '20%',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    marginHorizontal: '10%',
+    alignItems: 'center',
+  },
+  onBoardingMainContainer: {
+    backgroundColor: '#2E8581',
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
 })
