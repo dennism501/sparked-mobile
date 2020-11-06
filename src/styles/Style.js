@@ -19,6 +19,7 @@ export default StyleSheet.create({
     color: '#2E8581',
     fontWeight: '700',
     fontSize: 18,
+    textTransform: 'capitalize',
   },
   textStyleAccount: {
     color: '#fff',
@@ -43,4 +44,28 @@ export default StyleSheet.create({
     alignItems: 'center',
     margin: 20,
   },
+
+  //onBoarding styles
+  buttonContainer: {
+    height: '25%',
+    width: '100%',
+    marginLeft: '15%',
+    justifyContent: 'space-evenly',
+    alignContent: 'center',
+    flexDirection: 'column',
+  },
+  loginButtonStyle: {
+    width: 275,
+    backgroundColor: '#fff',
+  },
+  guestButton: {
+    width: '70%',
+    borderColor: '#fff',
+    borderWidth: 1,
+  },
+  guestButtonText: {
+    textTransform: 'capitalize',
+    fontSize: 18,
+    fontWeight: '700',
+  }
 })
