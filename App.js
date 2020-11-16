@@ -1,27 +1,46 @@
 import React from 'react'
 import {SafeAreaView, StyleSheet, View, Text, StatusBar} from 'react-native'
 import {Colors, ReloadInstructions} from 'react-native/Libraries/NewAppScreen'
-import Onboarding from './App/Components/Onboarding'
+import Onboarding from './src/components/Onboarding'
+import {createStackNavigator} from '@react-navigation/stack';
+
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <View>
-          {/* <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>Welcome to SparkEd Mobile</Text>
-            <Text style={styles.sectionDescription}>
-              <ReloadInstructions />
-            </Text>
-          </View> */}
 
-          <Onboarding />
+    <Stack.Navigator>
+      <Stack.Screen 
+      name="Onboarding"
+      component={Onboarding}
+      options={{
+          headerTitleStyle: {
+            display: 'none',
+          },
+        }} />
+    </Stack.Navigator>
+
+
+    // <Stack.Navigator>
+    //   <StatusBar barStyle="dark-content" />
+    //   <SafeAreaView>
+    //     <View>
+    //       {/* <View style={styles.sectionContainer}>
+    //         <Text style={styles.sectionTitle}>Welcome to SparkEd Mobile</Text>
+    //         <Text style={styles.sectionDescription}>
+    //           <ReloadInstructions />
+    //         </Text>
+    //       </View> */}
+
+    //       <Onboarding />
 
           
-        </View>
-      </SafeAreaView>
-    </>
+
+          
+    //     </View>
+    //   </SafeAreaView>
+    // </Stack.Navigator>
   )
 }
 
