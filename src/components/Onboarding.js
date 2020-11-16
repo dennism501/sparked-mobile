@@ -5,7 +5,7 @@ import {Button, Text} from 'native-base'
 import style from '../styles/Style.js'
 import onBoardingIllustration from '../assets/onboardingIllustration.png'
 
-export default function Onboarding() {
+export default function Onboarding({navigation}) {
   return (
     <>
     <StatusBar barStyle="dark-content" />
@@ -34,7 +34,7 @@ export default function Onboarding() {
         />
       </View>
       <View style={style.buttonContainer}>
-        <Button block style={style.loginButtonStyle}>
+        <Button block style={style.loginButtonStyle} onPress={()=> navigation.navigate('Register')}>
           <Text style={style.textStyle}> Log in / Sign Up</Text>
         </Button>
         <Button block bordered light style={style.guestButton}>
