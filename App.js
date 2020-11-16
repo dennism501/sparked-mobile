@@ -1,6 +1,4 @@
 import React from 'react'
-import {StyleSheet} from 'react-native'
-import {Colors} from 'react-native/Libraries/NewAppScreen'
 import Onboarding from './src/components/Onboarding'
 import {createStackNavigator} from '@react-navigation/stack'
 import Register from './src/components/Register'
