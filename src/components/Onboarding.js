@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Image } from 'react-native'
+import {View, Image,StatusBar } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {Button, Text} from 'native-base'
 import style from '../styles/Style.js'
@@ -7,6 +7,8 @@ import onBoardingIllustration from '../assets/onboardingIllustration.png'
 
 export default function Onboarding() {
   return (
+    <>
+    <StatusBar barStyle="dark-content" />
     <SafeAreaView>
     <View style={style.onBoardingMainContainer}>
       <View style={style.inlineLogoContainer}>
@@ -41,5 +43,6 @@ export default function Onboarding() {
       </View>
     </View>
     </SafeAreaView>
+    </>
   )
 }
