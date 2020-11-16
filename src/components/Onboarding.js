@@ -1,11 +1,13 @@
 import React from 'react'
-import {View, Image} from 'react-native'
+import {View, Image } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context';
 import {Button, Text} from 'native-base'
 import style from '../styles/Style.js'
 import onBoardingIllustration from '../assets/onboardingIllustration.png'
 
 export default function Onboarding() {
   return (
+    <SafeAreaView>
     <View style={style.onBoardingMainContainer}>
       <View style={style.inlineLogoContainer}>
         <Image
@@ -38,5 +40,6 @@ export default function Onboarding() {
         </Button>
       </View>
     </View>
+    </SafeAreaView>
   )
 }

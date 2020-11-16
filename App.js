@@ -15,9 +15,7 @@ const App = () => {
       name="Onboarding"
       component={Onboarding}
       options={{
-          headerTitleStyle: {
-            display: 'none',
-          },
+        headerShown: false,
         }} />
     </Stack.Navigator>
 
