@@ -55,13 +55,13 @@ export default StyleSheet.create({
     flexDirection: 'column',
   },
   loginButtonStyle: {
-    width: 275,
+    width: '70%',
     backgroundColor: '#fff',
   },
   guestButton: {
     width: '70%',
     borderColor: '#fff',
-    borderWidth: 1,
+    borderWidth: 2,
   },
   guestButtonText: {
     textTransform: 'capitalize',
