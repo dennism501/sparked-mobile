@@ -17,8 +17,6 @@ const App = () => {
           </View> */}
 
           <Onboarding />
-
-          
         </View>
       </SafeAreaView>
     </>
